@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documento</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  h1 {
+    margin-top: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-width: 40px;
+    
+    background-color: white;
+    
+  }
+  .container {
+    margin-top: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+  }
+  #p1{
+    padding: 20px;
+    color: white;
+    background-color: black;
+    border-color: black;
+  }
+  p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #p2{
+    border-top: 40px;
+    border-width: 80px;
+    background-color: white;
+  }
+  #f{
+    padding: 20px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    margin-top: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-width: 40px;
+  }
+
+</style>
+</head>
+<body id="b">
+<div id="p2">
+<h1>ColorCrafters</h1>
+<p id="p1">🏙Empresa       / /     👨‍🎨Trabalhe Conosco       / /     📍Nossas lojas      //    📞 (00)0000-0000</p>
+</div>
+<br><br>
+<p>mudança de cor de fundo</p>
+<div class="container">
+  <button onclick="mudarCor('white')">⚪</button>
+  <button onclick="mudarCor('red')">🔴</button>
+  <button onclick="mudarCor('blue')">🔵</button>
+  <button onclick="mudarCor('yellow')">🟡</button>
+  <br><br>
+  <button onclick="mudarCor('orange')">🟠</button>
+  <button onclick="mudarCor('green')">🟢</button>
+  <button onclick="mudarCor('purple')">🟣</button>
+  <button onclick="mudarCor('brown')">🟤</button>
+</div>
+<img src="360_F_609962529_7qHWpMQtbV7sVv9om882Lka1UzFqkVkz-AnyEraser.png" alt="">
+<footer id="f">*As cores deste site são apenas referências, podendo existir divergências entre as cores apresentadas na tela e as cores reais dos produtos comercializados.</footer>
+<script>
+  function mudarCor(bgColor, textColor) {
+    document.getElementById('b').style.backgroundColor = bgColor;
+    document.getElementById('b').style.color = textColor;
+  }
+</script>
+ 
+</body>
+</html>
